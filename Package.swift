@@ -11,11 +11,10 @@ let package = Package(
             targets: ["PerfectSSH"]),
     ],
     dependencies: [
-      .package(url: "https://github.com/PerfectSideRepos/SSHApi.git", from: "3.0.0")
+      .package(url: "https://github.com/PerfectSideRepos/SSHApi.git", from: "3.1.0")
     ],
     targets: [
-      .target(name: "mininet", dependencies: []),
-      .target(name: "PerfectSSH", dependencies: ["mininet"]),
+      .target(name: "PerfectSSH", dependencies: []),
       .testTarget(name: "PerfectSSHTests", dependencies: ["PerfectSSH"])
     ]
 )

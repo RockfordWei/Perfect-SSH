@@ -1,4 +1,0 @@
-module mininet [system] {
-  header "mininet.h"
-  export *
-}
